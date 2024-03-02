@@ -1,0 +1,7 @@
+.box:hover {
+  background-color: rgb(238, 212, 237) !important;
+}
+
+.link:hover {
+  color: #db79d4
+}
