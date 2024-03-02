@@ -34,25 +34,25 @@ export default function Burger() {
                                 borderRadius: '10px',
                                 padding: '10px'}}>
           <DropdownSection>
-            <DropdownItem style={isActive('/procedures/gynecology') ? 
+            <DropdownItem style={isActive('/info') ? 
             {padding: '10px 20px 10px 20px', color: '#db79d4'} : 
             {padding: '10px 20px 10px 20px'}}>
-              <Link href='/procedures/gynecology'>Gynecology</Link>
+              <Link href='/info'>Who We Are</Link>
             </DropdownItem>
-            <DropdownItem style={isActive('/procedures/prenatal') ? 
+            <DropdownItem style={isActive('/procedures') ? 
             {padding: '10px 20px 10px 20px', color: '#db79d4'} : 
             {padding: '10px 20px 10px 20px'}}>
-              <Link href='/procedures/prenatal'>Prenatal Care & Obstetrics</Link>
+              <Link href='/procedures'>Services We Provide</Link>
             </DropdownItem>
-            <DropdownItem style={isActive('/procedures/postnatal') ? 
+            <DropdownItem style={isActive('/visit') ? 
             {padding: '10px 20px 10px 20px', color: '#db79d4'} : 
             {padding: '10px 20px 10px 20px'}}>
-              <Link href='/procedures/postnatal'>Postnatal Care</Link>
+              <Link href='/visit'>Your First Visit</Link>
             </DropdownItem>
-            <DropdownItem style={isActive('/procedures/menopause') ? 
+            <DropdownItem style={isActive('/contact') ? 
             {padding: '10px 20px 10px 20px', color: '#db79d4'} : 
             {padding: '10px 20px 10px 20px'}}>
-              <Link href='/procedures/menopause'>Menopause & Beyond</Link>
+              <Link href='/contact'>Book an Appointment</Link>
             </DropdownItem>
           </DropdownSection>
          
