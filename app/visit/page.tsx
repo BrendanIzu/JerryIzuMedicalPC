@@ -1,12 +1,9 @@
-'use client';
-
-import Link from "next/link";
-import Image from "next/image";
 import NavBar from "../assets/components/NavBar";
 import Bar from "../assets/components/Bar";
 import Footer from "../assets/components/Footer";
-import { useWindowSize } from "usehooks-ts";
 import Faqs from "../assets/components/Faqs";
+import Section from "../assets/components/Section";
+
 import { Faq } from "../interfaces/Faq";
 
 const questionsAndAnswers: Faq[] = [
@@ -25,57 +22,37 @@ const questionsAndAnswers: Faq[] = [
 ];
 
 export default function Visit() {
-  const { width = 0, height = 0 } = useWindowSize();
-  
   return (
     <>
       <NavBar/>
-      
-      {/* MAIN */}
-      <div style={{margin: '50px', marginTop: '30px'}}>
-        {/* HEADER */}
-        <div style={{padding: '40px', backgroundColor: ''}}>
+      <div className="m-16">
+        <div>
           <Bar/>
           <br/>
           <br/>
-          <div style={{color: 'black', fontSize: '40px'}}>
-          Your First Visit
-          </div>
+          <h1>Your First Visit</h1>
           <br/>
-          <div style={{fontSize: '20px'}}>
+          <h2>
             We look forward to providing you with our best care. 
             Don't forgot to bring your ID and insurance, 
-            and please arrive 15 minutes before your appointment time.</div>
+            and please arrive 15 minutes before your appointment time.
+          </h2>
         </div>
       </div>
       
-      {/* HEADER 2*/}
-      <div>
-        <div style={{marginTop: '10px', display: 'flex', alignItems: 'center'}}>
-          {width > 1000 && <div style={{flex: 1, marginLeft: '100px'}}>
-            <Image style={{borderRadius: '10px 50px 10px 50px'}} src='/office.png' height={500} width={500} alt=""/>
-          </div>}
-          <div style={{flex: 1, marginRight: '100px', marginLeft: '100px'}}>
-            <Bar/>
-            <br/>
-            <h1 style={{color: 'black'}}>We're excited to see you!</h1>
-            <br/>
-            <p>
-              We know that your first visit to a doctor can sometimes be stressful, 
-              but we are confident that you'll soon feel comfortable with our 
-              experienced team of professionals health care providers.<br/><br/>
-
-              You'll be in good hands, but in case you have any questions 
-              or concerns before your appointment, don't hesitate to contact 
-              our office and we'd be happy to provide answers.<br/><br/>
-
-              Below, you can also find a few of the frequently asked 
-              questions we often hear from new patients as well.
-            </p>
-          </div>
-        </div>
-      </div>
-      
+      <Section 
+        title={"We're excited to see you!"} 
+        subtitle={"We know that your first visit to a doctor can sometimes be stressful, \
+          but we are confident that you'll soon feel comfortable with our \
+          experienced team of professionals health care providers. \n\n\
+          You'll be in good hands, but in case you have any questions \
+          or concerns before your appointment, don't hesitate to contact \
+          our office and we'd be happy to provide answers. \n\n\
+          Below, you can also find a few of the frequently asked \
+          questions we often hear from new patients as well."} 
+        image={"/office.png"} 
+        position={"section"}/>
+    
       <br/>
       <br/>
       <br/>
@@ -84,7 +61,6 @@ export default function Visit() {
       <Faqs faqs={questionsAndAnswers}/>
       <br/>
       <br/>
-      
       <Footer/>
     </>
   );

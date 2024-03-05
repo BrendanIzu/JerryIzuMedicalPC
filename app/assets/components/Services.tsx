@@ -4,7 +4,7 @@ interface ServiceProps {
 
 const Service = ({title} : ServiceProps) => {
   return (
-    <div style={{width: 'auto', backgroundColor: '#faf8fb', margin: '10px', padding: '15px', borderRadius: '5px'}}>
+    <div className="w-full bg-white shadow rounded-md px-6 py-4">
       <h3>{title}</h3>
     </div>
   )
@@ -17,10 +17,10 @@ interface ServicesProps {
 
 export const Services = ({title, services} : ServicesProps) => {
   return (
-    <div style={{margin: '100px', marginTop: '70px'}}>
-      <h2>{title}</h2>
+    <div className="m-16">
+      <h1>{title}</h1>
       <br/>
-      <div style={{display: 'flex', flexWrap: 'wrap'}}>
+      <div className="flex flex-wrap gap-5">
         {services.map(service => <div key={service.toString()}><Service title={service}/></div>)}
       </div>
     </div>

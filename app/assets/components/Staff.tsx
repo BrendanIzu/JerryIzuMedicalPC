@@ -9,16 +9,15 @@ interface Props {
 export default function Staff({person} : Props) {
   return (
     <>
-      <div style={{width: '350px', margin: '30px'}}>
+      <div className="w-96 p-10">
         <div style={{borderRadius: '20px', width: '150px', height: '150px', overflow: 'hidden'}}>
           <Image style={{objectFit: 'cover'}} src={person.picture} alt="" width={150} height={150}></Image>
         </div>
-        <div style={{color: 'black', fontSize: '20px', marginTop: '40px'}}>
+        <h2 className="mt-6 text-black">
           {person.title}
-        </div>
-        <p style={{marginTop: '10px'}}>
+        </h2>
+        <p className="mt-6">
           {person.about}
-          
         </p>
       </div>
     </>

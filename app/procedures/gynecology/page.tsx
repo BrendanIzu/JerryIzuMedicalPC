@@ -1,13 +1,8 @@
-'use client'
-
-import Link from "next/link";
-import Image from "next/image";
 import NavBar from "../../assets/components/NavBar";
 import Footer from "@/app/assets/components/Footer";
-import { useWindowSize } from "usehooks-ts";
-import Bar from "@/app/assets/components/Bar";
 import { Services } from "@/app/assets/components/Services";
 import Faqs from "@/app/assets/components/Faqs";
+import Section from "@/app/assets/components/Section";
 
 const services = [
   "Well Woman Exam",
@@ -80,62 +75,30 @@ const questionsAndAnswers = [
 ];
 
 export default function Info() {
-  const { width = 0, height = 0 } = useWindowSize();
-  
   return (
     <>
       <NavBar/>
+      <Section 
+        title={"Gynecology"} 
+        subtitle={"We provide preventative, diagnostic and \
+          specialized gynecologic services for women."} 
+        image={"/flowers.png"} 
+        position={"title"}/>
+        
+      <Section 
+        title={"Providing a comfortable environment."} 
+        subtitle={"When you enter our practice, our hope is that you will feel \
+          comfortable enough to ask our staff any questions you may have \
+          regarding your health. \n\n\
+          With decades of experience, our staff strive to create a caring \
+          environment for patients. Beyond reproductive health care, \
+          we always do our best to help with our patients’ overall health.\n\n\
+          Whether you are coming in for your annual check up or because there \
+          are areas of concern, we plan to be there for you every step of the way."}  
+        image={"/tools.png"} 
+        position={"section"}/>
   
-      {/* HEADER */}
-      <div>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-          <div style={{flex: 1, marginRight: '100px', marginLeft: '100px'}}>
-            <Link style={{color: '#db79d4'}} href='/procedures'>View All Services</Link>
-            <br/>
-            <br/>
-            <h1 style={{color: 'black'}}>Gynecology</h1>
-            <br/>
-            <h2>
-              We provide preventative, diagnostic and <br/>specialized gynecologic 
-              services for women.
-            </h2>
-          </div>
-          {width > 1000 && <div style={{flex: 1, marginRight: '100px'}}>
-            <Image style={{borderRadius: '50px 10px 50px 10px'}} src='/flowers.png' height={500} width={500} alt=""/>
-          </div>}
-        </div>
-      </div>
-      
-      {/* HEADER 2*/}
-      <div>
-        <div style={{marginTop: '100px', display: 'flex', alignItems: 'center'}}>
-          {width > 1000 && <div style={{flex: 1, marginLeft: '100px'}}>
-            <Image style={{borderRadius: '10px 50px 10px 50px'}} src='/tools.png' height={500} width={500} alt=""/>
-          </div>}
-          <div style={{flex: 1, marginRight: '100px', marginLeft: '100px'}}>
-            <Bar/>
-            <br/>
-            <br/>
-            <h1 style={{color: 'black'}}>Providing a comfortable environment.</h1>
-            <br/>
-            <p>
-              When you enter our practice, our hope is that you will feel 
-              comfortable enough to ask our staff any questions you may have 
-              regarding your health.<br/><br/>
-
-              With decades of experience, our staff strive to create a caring 
-              environment for patients. Beyond reproductive health care, 
-              we always do our best to help with our patients’ overall health.<br/><br/>
-
-              Whether you are coming in for your annual check up or because there 
-              are areas of concern, we plan to be there for you every step of the way.
-            </p>
-          </div>
-        </div>
-      </div>
       <Services title='Our Gynecologic Services' services={services}/>
-      <br/>
-      <br/>
       <br/>
       <Faqs faqs={questionsAndAnswers}/>
       <br/>

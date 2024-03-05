@@ -1,12 +1,12 @@
 'use client';
 
-import Link from "next/link";
 import Image from "next/image";
 import NavBar from "../../assets/components/NavBar";
 import { useWindowSize } from "usehooks-ts";
 import Bar from "@/app/assets/components/Bar";
 import Footer from "@/app/assets/components/Footer";
 import { Services } from "@/app/assets/components/Services";
+import Section from "@/app/assets/components/Section";
 
 const services = [
   "Safe pre-pregnancy assessment and counseling",
@@ -27,50 +27,23 @@ export default function Info() {
     <>
       <NavBar/>
       
-      {/* HEADER */}
-      <div>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-          <div style={{flex: 1, marginLeft: '100px', marginRight: '100px'}}>
-            <Link style={{color: '#db79d4'}} href='/procedures'>View All Services</Link>
-            <br/>
-            <br/>
-            <h1 style={{color: 'black'}}>Prenatal Care & Obstetrics</h1>
-            <br/>
-            <h2>
-              Our obstetrical services include pre-pregnancy,<br/> 
-              pregnancy and post-pregnancy care plans for<br/>
-              both normal and high-risk pregnancies.
-            </h2>
-          </div>
-          {width > 1000 && <div style={{flex: 1}}>
-            <Image style={{borderRadius: '50px 10px 50px 10px'}} src='/basket.png' height={500} width={500} alt=""/>
-          </div>}
-        </div>
-      </div>
-      
-      {/* HEADER 2 */}
-      <div>
-        <div style={{marginTop: '100px', display: 'flex', alignItems: 'center'}}>
-          {width > 1000 && <div style={{flex: 1, marginLeft: '100px'}}>
-            <Image style={{borderRadius: '10px 50px 10px 50px'}} src='/scrabble.png' height={500} width={500} alt=""/>
-          </div>}
-          <div style={{flex: 1, marginRight: '100px', marginLeft: '100px'}}>
-            <Bar/>
-            <br/>
-            <br/>
-            <h1 style={{color: 'black'}}>Congratulations!</h1>
-            <br/>
-            <p>
-              Thank you for considering our practice for your obstetrical care.<br/><br/>
-
-              Dr. Jerry K. Izu has decades of experience helping women throughout the entire process. 
-              He will supervise and orchestrate all your care including the delivery of your baby.<br/><br/>
-
-              We’re excited to be a supportive part of your growing family.
-            </p>
-          </div>
-        </div>
-      </div>  
+      <Section 
+        title={"Prenatal Care & Obstetrics"} 
+        subtitle={"Our obstetrical services include pre-pregnancy, \
+          pregnancy and post-pregnancy care plans for \
+          both normal and high-risk pregnancies."} 
+        image={"/basket.png"} 
+        position={"title"}/>
+        
+      <Section 
+        title={"Congratulations!"} 
+        subtitle={"Thank you for considering our practice for your obstetrical care. \n\n\
+          Dr. Jerry K. Izu has decades of experience helping women throughout the entire process. \
+          He will supervise and orchestrate all your care including the delivery of your baby. \n\n\
+          We’re excited to be a supportive part of your growing family."} 
+        image={"/scrabble.png"} 
+        position={"section"}/>
+ 
       <br/>
       <br/>
       <br/>
@@ -78,7 +51,7 @@ export default function Info() {
       <Services title='Our Prenatal & Childbirth Services' services={services}/>
       
       {/* INFO */}
-      <div style={{display: 'flex', justifyContent: 'center', margin: '50px', flexWrap: 'wrap'}}>
+      <div className="flex justify-center m-16 flex-wrap">
         
         {/* COL 1 */}
         <div style={{flex: 1, margin: '50px'}}>

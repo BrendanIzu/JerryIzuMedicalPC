@@ -1,4 +1,3 @@
-import Link from "next/link";
 import NavBar from "../assets/components/NavBar";
 import Footer from "../assets/components/Footer";
 import Bar from "../assets/components/Bar";
@@ -21,38 +20,23 @@ const services = [
   'In-office Pelvic, Obstetrical Ultrasounds & Bone Densities'
 ]
 
-interface Props {
-  title: string
-}
-
-const Service = ({title} : Props) => {
-  return (
-    <div style={{width: 'auto', backgroundColor: '#faf8fb', margin: '10px', padding: '15px', borderRadius: '5px'}}>
-      <h3>{title}</h3>
-    </div>
-  )
-}
-
 export default function Procedures() {
   return (
     <>
       <NavBar/>
-      {/* MAIN */}
-      <div style={{margin: '50px', marginTop: '30px'}}>
-        {/* HEADER */}
-        <div style={{padding: '40px', backgroundColor: ''}}>
+      <div className="mx-16">
+        <div className="mt-12">
           <Bar/>
           <br/>
-          <br/>
-          <div style={{color: 'black', fontSize: '40px'}}>
+          <h1>
             Our Services
-          </div>
+          </h1>
           <br/>
-          <div style={{fontSize: '20px'}}>
+          <h2>
             We're here to provide a variety of services to our patients, 
             ensuring the best and most comprehensive care. Here are the 
             specializations of our practice and the full list of services below.
-          </div>
+          </h2>
           <br/>
         </div>
       </div>

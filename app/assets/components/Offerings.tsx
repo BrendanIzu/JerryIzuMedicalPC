@@ -1,9 +1,6 @@
 'use client';
 
 import Link from "next/link";
-import { useWindowSize } from "usehooks-ts";
-
-import styles from '../styles/Offerings.module.css';
 
 interface Props {
   title: string
@@ -12,25 +9,20 @@ interface Props {
 }
 
 const Box = ({title, description, path} : Props) => {
-  const { width = 0, height = 0 } = useWindowSize();
   return (
-    <div className={styles.box} style={width > 1000 ? 
-      {height: 'auto', width: '280px', backgroundColor: '#faf8fb', margin: '10px', borderRadius: '10px', padding: '40px'}
-      :
-      {height: '250px', width: '80%', backgroundColor: '#faf8fb', marginBottom: '20px', borderRadius: '10px', padding: '40px'}}>
+    <div className='w-72 bg-purple m-2 p-10 rounded-md shadow hover:text-pink'>
       <h3 style={{fontSize: '20px', color: '#db79d4'}}>{title}</h3>
       <br/>
       <p>{description}</p>
       <br/>
-      <Link className={styles.link} href={path}>Learn more</Link>
+      <Link href={path}>Learn more</Link>
     </div>
   )
 }
 
 export default function Offerings() {
-  const { width = 0, height = 0 } = useWindowSize();
   return (
-    <div style={width > 1000 ? {display: 'flex', justifyContent: 'center'} : {display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <div className='mt-12 flex justify-center flex-wrap'>
       <Box title='Gynecology'
       path='/procedures/gynecology'
       description='We provide preventative, diagnostic and specialized gynecologic services for women.'/>

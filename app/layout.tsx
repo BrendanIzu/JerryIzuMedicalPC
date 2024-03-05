@@ -3,7 +3,7 @@ import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import NavBar from "./assets/components/NavBar";
 
-const font = Noto_Sans({ subsets: ["latin"], weight: ['300', '500']});
+const font = Noto_Sans({ subsets: ["latin"], weight: ['300', '400', '500']});
 
 export const metadata: Metadata = {
   title: "Valencia Gynecology Associates"
