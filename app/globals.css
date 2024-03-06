@@ -33,10 +33,21 @@ h4 {
   color: #db79d4;
 }
 
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #876d8f;
+}
+
+h5:hover {
+  color: #db79d4;
+}
+
 p {
   color: #876d8f;
   font-weight: 300;
   white-space: pre-line;
+  line-height: 1.6;
 }
 
 .info {

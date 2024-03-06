@@ -51,7 +51,7 @@ export default function Info() {
       <br/>
       
       <div style={{display: 'flex', justifyContent: 'space-evenly', alignItems: 'flex-end', flexWrap: 'wrap'}}>
-        <div className="info">
+        <div className="info shadow">
           <br/>
           <h4>Tips For Healthy Recovery</h4>
           <br/>
@@ -68,7 +68,7 @@ export default function Info() {
           </ul>
         </div>
         
-        <div className="info" style={{width: '600px'}}>
+        <div className="info shadow" style={{width: '600px'}}>
           <br/>
           <h2>Stages of Pregnancy</h2>
           <br/>

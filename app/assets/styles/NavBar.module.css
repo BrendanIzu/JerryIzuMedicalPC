@@ -3,16 +3,7 @@
   color: #db79d4
 }
 
-.button {
-  padding: 10px 30px 10px 30px;
-  border-radius: 100px;
-  background-color: #db79d4;
-  color: white;
-}
 
-.button:hover {
-  background-color: #f4b4f0
-}
 
 .link:hover {
   color: #db79d4
