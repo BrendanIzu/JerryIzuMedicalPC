@@ -3,10 +3,10 @@ import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import NavBar from "./assets/components/NavBar";
 
-const font = Noto_Sans({ subsets: ["latin"], weight: ['300', '400', '500']});
+const font = Noto_Sans({ subsets: ["latin"], weight: ["300", "400", "500"] });
 
 export const metadata: Metadata = {
-  title: "Valencia Gynecology Associates"
+  title: "Jerry Izu Medical PC",
 };
 
 export default function RootLayout({
@@ -16,7 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={font.className}>
-      <body style={{display: 'flex', flexDirection: 'column'}} className={font.className}>{children}</body>
+      <body
+        style={{ display: "flex", flexDirection: "column" }}
+        className={font.className}
+      >
+        {children}
+      </body>
     </html>
   );
 }
