@@ -7,16 +7,22 @@ export default function Footer() {
       <div className="w-64">
         <Image src="/foot.png" width={180} height={180} alt=""></Image>
       </div>
-      {/* <div className="w-64">
+      <div className="w-64">
         <h3>Our Location</h3>
-        <p>Smyth Medical Plaza<br/>
-          27871 Smyth Drive #102<br/>
-          Valencia, CA 91355</p>
-        <Link className="text-pink hover:text-dark-purple"
-          href='https://www.google.com/maps/place/Valencia+Gynecology+Associates/@34.440085,-118.5702101,17z/data=!4m5!3m4!1s0x0:0xde3eff1f52abe20c!8m2!3d34.439771!4d-118.5678166?shorturl=1'>
+        <p>
+          23206 Lyons Avenue
+          <br />
+          Suite 112
+          <br />
+          Newhall, CA 91321-2671
+        </p>
+        <Link
+          className="text-pink hover:text-dark-purple"
+          href="https://www.google.com/maps/place/23206+Lyons+Ave+%23+112,+Newhall,+CA+91321/@34.3790581,-118.5410498,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2868b85c00cdb:0xce94316e9f2f2f4a!8m2!3d34.3790581!4d-118.5384749!16s%2Fg%2F11lkj6_zzt?entry=ttu"
+        >
           Get Directions
         </Link>
-      </div> */}
+      </div>
       <div className="w-64">
         <h3>Our Hours</h3>
         <p>
