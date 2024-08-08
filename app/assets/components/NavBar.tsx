@@ -16,17 +16,12 @@ export const NavBar = () => {
 
   return (
     <div className="flex justify-between m-16">
-      <div style={{ flex: 1 }}>
-        {/* <Link href='/'>
-        <Image src={'/logo.png'} alt="" width={180} height={180}/>
-      </Link> */}
-      </div>
       {width > 800 ? (
         <div
           style={{
             flex: 2,
             display: "flex",
-            gap: "50px",
+            gap: "30px",
             justifyContent: "flex-end",
             alignItems: "center",
           }}
@@ -44,9 +39,15 @@ export const NavBar = () => {
           </Link>
           <Link
             className="px-8 py-3 rounded-full bg-pink text-white shadow hover:bg-light-pink"
-            href="/contact"
+            href="https://l.klara.com/AW9DWTCmJzfHFXCK"
           >
             Make an Appointment
+          </Link>
+          <Link
+            className="px-8 py-3 rounded-full bg-pink text-white shadow hover:bg-light-pink"
+            href="https://izu.ema.md/ema/pay/online"
+          >
+            Pay Online
           </Link>
         </div>
       ) : (
