@@ -65,18 +65,6 @@ export default function Info() {
             <div>
               <Image
                 className="rounded-lg"
-                src="/mayo.jpeg"
-                height={500}
-                width={500}
-                alt=""
-              />
-              <br />
-              <h2>Henry Mayo Newhall Hospital</h2>
-              <p>McBean Pkwy, Valencia CA</p>
-            </div>
-            <div>
-              <Image
-                className="rounded-lg"
                 src="/holycross.jpeg"
                 height={500}
                 width={500}
