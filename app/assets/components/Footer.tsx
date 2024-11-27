@@ -36,20 +36,16 @@ export default function Footer() {
           <h3>Phone</h3>
           <Link
             className="text-pink hover:text-dark-purple"
-            href="tel:6612591781"
+            href="tel:6613125799"
           >
             (661) 312-5799
           </Link>
         </div>
-        {/* <div className="my-8">
+
+        <div className="my-8">
           <h3>Fax</h3>
-          <Link
-            className="text-pink hover:text-dark-purple"
-            href="tel:6612594571"
-          >
-            (661) 259-4571
-          </Link>
-        </div> */}
+          <div className="text-pink hover:text-dark-purple">(661) 516-2913</div>
+        </div>
       </div>
     </div>
   );
