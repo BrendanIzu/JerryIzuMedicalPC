@@ -92,9 +92,10 @@ export default function Menopause() {
           </p>
           <h4 className="mt-6">Traditional Hormone Therapy</h4>
           <p className="mt-3">
-            Plant-based, "weaker" and yet effective use of all female hormones.
-            Considered a "natural" solution, it solves deficiencies by supplementing
-            hormones identical to our own body's hormones.
+            Conventional, FDA-approved hormone replacement therapy available as
+            pills, patches, creams or vaginal rings. It replaces estrogen (and
+            progesterone when needed) to relieve symptoms such as hot flashes,
+            night sweats and vaginal dryness.
           </p>
         </div>
 

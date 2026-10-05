@@ -21,6 +21,7 @@ export default function Staff({person} : Props) {
       <div>
         <h2 className="text-[#1f1a21]">{person.title}</h2>
         <p className="mt-4">{person.about}</p>
+        <p className="mt-4">{person.additional}</p>
       </div>
     </div>
   );

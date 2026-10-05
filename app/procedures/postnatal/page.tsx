@@ -5,15 +5,13 @@ import Section from "@/app/assets/components/Section";
 import Stages from "@/app/assets/components/Stages";
 
 const services = [
-  "Safe pre-pregnancy assessment and counseling",
-  "Recurrent miscarriage evaluation and counseling",
-  "Early pregnancy genetic counseling",
-  "Low-risk pregnancy care",
-  "Pregnancy care for women over 35 years old",
-  "High-risk pregnancy care",
-  "Pregnancy complication management",
-  "Pre-existing medical conditions management during pregnancy",
-  "Operative obstetrics and cesarean section"
+  "Postpartum check-ups and recovery care",
+  "Cesarean section recovery",
+  "Contraception options after delivery",
+  "Breast health and breastfeeding concerns",
+  "Postpartum mood changes and depression support",
+  "Iron deficiency anemia",
+  "Pelvic floor dysfunction such as urinary incontinence"
 ];
 
 export default function Info() {
@@ -64,7 +62,7 @@ export default function Info() {
         ]}/>
       </section>
 
-      <Services title='Our Prenatal & Childbirth Services' services={services}/>
+      <Services title='Our Postnatal Services' services={services}/>
       <Footer/>
     </>
   );

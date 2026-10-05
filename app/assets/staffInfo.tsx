@@ -24,7 +24,7 @@ export const staffInfo: Person[] = [
     treating patients with rare complications such as brain aneurysms and malaria. \
     Providing medical care to military members and their families afforded Dr. Izu \
     the unique experience of helping these patients through their health problems \
-    while dealing with the added stressors of deployment and separation.In 2011, \
+    while dealing with the added stressors of deployment and separation. In 2011, \
     Dr. Izu was honorably discharged from the United States Army and relocated \
     with his wife Bernadette and their six children to Santa Clarita so that they \
     could be close to their extended family. Dr. Izu enjoys working together with \
