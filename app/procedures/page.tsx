@@ -3,6 +3,7 @@ import Footer from "../assets/components/Footer";
 import Bar from "../assets/components/Bar";
 import Offerings from "../assets/components/Offerings";
 import { Services } from "../assets/components/Services";
+import Treatments from "../assets/components/Treatments";
 
 const services = [
   'Annual Exams',
@@ -41,6 +42,7 @@ export default function Procedures() {
         </div>
       </div>
       <Offerings/>
+      <Treatments/>
       <Services title='Available Services' services={services}/>
       <Footer/>
     </>

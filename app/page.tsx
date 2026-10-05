@@ -6,6 +6,7 @@ import Footer from "./assets/components/Footer";
 import Offerings from "./assets/components/Offerings";
 import Appt from "./assets/components/Appt";
 import Section from "./assets/components/Section";
+import Treatments from "./assets/components/Treatments";
 
 export default function Home() {
   return (
@@ -39,6 +40,8 @@ export default function Home() {
           </Link>
         </div>
       </div>
+
+      <Treatments />
 
       <br />
       <br />
