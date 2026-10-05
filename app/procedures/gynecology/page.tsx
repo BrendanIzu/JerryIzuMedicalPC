@@ -99,10 +99,7 @@ export default function Info() {
         position={"section"}/>
   
       <Services title='Our Gynecologic Services' services={services}/>
-      <br/>
       <Faqs faqs={questionsAndAnswers}/>
-      <br/>
-      <br/>
       <Footer/>
     </>
   );

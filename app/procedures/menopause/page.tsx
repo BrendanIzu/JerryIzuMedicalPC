@@ -65,7 +65,7 @@ export default function Menopause() {
           which usually occurs for women in the late 40s to early 50s. At this point, \
           ovaries are no longer producing high levels of hormones.\n\n\
           During this time, some common symptoms may include hot flashes, \
-          night sweats, sleeping problems, viginal dryness, urinary urgency, \
+          night sweats, sleeping problems, vaginal dryness, urinary urgency, \
           emotional changes (irritability, mood swings, depression), dry skin and \
           lack of sexual desire.\n\n\
           Other troublesome symptoms of menopause can be called \"senior moments\" \
@@ -76,57 +76,44 @@ export default function Menopause() {
       
       <Services title='Our Menopause Management' services={services}/>
       
-      <div className="mx-16 my-8">
-        <div className="flex justify-around items-center flex-wrap">
-          <div className="w-144 h-152 bg-purple p-5 rounded-md shadow">
-              <h4>BioTE Pellet Therapy (Hormone Therapy)</h4>
-              <br/>
-              <p>
-                Millions of individuals are impacted by hormone imbalance every day. From<br/>
-                fatigue to weight gain to severe mood changes to low libido, many are left with<br/>
-                feelings of frustration and discomfort, unaware of how they may alleviate<br/>
-                these common issues.<br/><br/>
-
-                Dr. Izu specializes in addressing these and other indicators of aging through<br/>
-                precise personalized patient care plans that optimize hormones and improve<br/>
-                quality of life.<br/><br/>
-              </p>
-              <br/>
-              <h4>Traditional Hormone Therary</h4>
-              <br/>
-              <p>
-                Plant-based, "weaker" and yet effective use of all female hormones.<br/> 
-                Considered a "natural" solution, it solves deficiencies by supplementing<br/> 
-                hormones identical to our own body's hormones.<br/> 
-              </p>
-            </div>
-          
-            <br/>
-          
-            <div className="w-144 h-152 bg-purple p-5 rounded-md shadow">
-              <h4>Non-Hormonal Therapies</h4>
-              <br/>
-              <p>
-                We offer menopausal guidance and advice, ranging from non-hormonal<br/> 
-                supplements to dietary and lifestyle recommendations.
-              </p>
-              <br/>
-              <h4>Bioidentical Therapy</h4>
-              <br/>
-              <p>
-                Plant-based, "weaker" and yet effective use of all female hormones.<br/> 
-                Considered a "natural" solution, it solves deficiencies by supplementing<br/> 
-                hormones identical to our own body's hormones.<br/> 
-              </p>
-            </div>
+      <section className="page-x grid gap-5 pb-4 md:grid-cols-2">
+        <div className="info">
+          <h4>BioTE Pellet Therapy (Hormone Therapy)</h4>
+          <p className="mt-3">
+            Millions of individuals are impacted by hormone imbalance every day. From
+            fatigue to weight gain to severe mood changes to low libido, many are left with
+            feelings of frustration and discomfort, unaware of how they may alleviate
+            these common issues.
+          </p>
+          <p className="mt-3">
+            Dr. Izu specializes in addressing these and other indicators of aging through
+            precise personalized patient care plans that optimize hormones and improve
+            quality of life.
+          </p>
+          <h4 className="mt-6">Traditional Hormone Therapy</h4>
+          <p className="mt-3">
+            Plant-based, "weaker" and yet effective use of all female hormones.
+            Considered a "natural" solution, it solves deficiencies by supplementing
+            hormones identical to our own body's hormones.
+          </p>
         </div>
-      </div>
-      
+
+        <div className="info">
+          <h4>Non-Hormonal Therapies</h4>
+          <p className="mt-3">
+            We offer menopausal guidance and advice, ranging from non-hormonal
+            supplements to dietary and lifestyle recommendations.
+          </p>
+          <h4 className="mt-6">Bioidentical Therapy</h4>
+          <p className="mt-3">
+            Plant-based, "weaker" and yet effective use of all female hormones.
+            Considered a "natural" solution, it solves deficiencies by supplementing
+            hormones identical to our own body's hormones.
+          </p>
+        </div>
+      </section>
+
       <Faqs faqs={questionsAndAnswers}/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
       <Footer/>
     </>
   );

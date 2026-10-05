@@ -1,10 +1,8 @@
-'use client';
-
 import NavBar from "../../assets/components/NavBar";
-import { useWindowSize } from "usehooks-ts";
 import Footer from "@/app/assets/components/Footer";
 import { Services } from "@/app/assets/components/Services";
 import Section from "@/app/assets/components/Section";
+import Stages from "@/app/assets/components/Stages";
 
 const services = [
   "Safe pre-pregnancy assessment and counseling",
@@ -19,8 +17,6 @@ const services = [
 ];
 
 export default function Info() {
-  const { width = 0, height = 0 } = useWindowSize();
-  
   return (
     <>
       <NavBar/>
@@ -47,15 +43,10 @@ export default function Info() {
         image={"/hands.png"} 
         position={"section"}/> 
       
-      <br/>
-      <br/>
-      
-      <div style={{display: 'flex', justifyContent: 'space-evenly', alignItems: 'flex-end', flexWrap: 'wrap'}}>
-        <div className="info shadow">
-          <br/>
+      <section className="page-x grid items-start gap-5 py-8 md:grid-cols-2">
+        <div className="info">
           <h4>Tips For Healthy Recovery</h4>
-          <br/>
-          <ul>
+          <ul className="mt-3 list-disc pl-5">
             <li>Get plenty of rest</li>
             <li>Stay hydrated</li>
             <li>Eat well and a balanced diet</li>
@@ -67,25 +58,12 @@ export default function Info() {
             <li>Don’t hesitate to reach out for help.</li>
           </ul>
         </div>
-        
-        <div className="info shadow" style={{width: '600px'}}>
-          <br/>
-          <h2>Stages of Pregnancy</h2>
-          <br/>
-          <div style={{display: 'flex'}}>
-            <div style={{width: '230px', backgroundColor: '#f5a9de', padding: '10px', paddingLeft: '15px', paddingRight: '20px'}}>
-              <h4 style={{color: 'white'}}>Childbirth</h4>
-              <p style={{fontSize: '13px', color: 'white'}}>Delivery</p>
-            </div>
-            <div style={{width: '230px', backgroundColor: '#e897e1', padding: '10px', paddingLeft: '15px', paddingRight: '20px'}}>
-            <h4 style={{color: 'white'}}>Postnatal Period</h4>
-              <p style={{fontSize: '13px', color: 'white'}}>6 to 8 weeks later</p>
-            </div>
-            {width > 1300 && <div className="arrow-right"></div>}
-          </div>
-        </div>
-      </div>
-      
+        <Stages stages={[
+          {name: 'Childbirth', timing: 'Delivery'},
+          {name: 'Postnatal Period', timing: '6 to 8 weeks later'},
+        ]}/>
+      </section>
+
       <Services title='Our Prenatal & Childbirth Services' services={services}/>
       <Footer/>
     </>

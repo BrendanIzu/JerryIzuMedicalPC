@@ -1,5 +1,3 @@
-'use client';
-
 import Link from "next/link";
 
 interface Props {
@@ -10,19 +8,17 @@ interface Props {
 
 const Box = ({title, description, path} : Props) => {
   return (
-    <div className='w-72 bg-purple m-2 p-10 rounded-md shadow hover:text-pink'>
-      <h3 style={{fontSize: '20px', color: '#db79d4'}}>{title}</h3>
-      <br/>
-      <p>{description}</p>
-      <br/>
-      <Link href={path}>Learn more</Link>
-    </div>
+    <Link href={path} className='group flex flex-col rounded-xl bg-purple p-7 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-0.5 hover:shadow-md'>
+      <h3 className='text-pink' style={{fontSize: '19px'}}>{title}</h3>
+      <p className='mt-3 flex-1'>{description}</p>
+      <span className='mt-5 font-medium text-[#1f1a21] group-hover:text-pink'>Learn more →</span>
+    </Link>
   )
 }
 
 export default function Offerings() {
   return (
-    <div className='mt-12 flex justify-center flex-wrap'>
+    <div className='page-x grid gap-5 sm:grid-cols-2 lg:grid-cols-4'>
       <Box title='Gynecology'
       path='/procedures/gynecology'
       description='We provide preventative, diagnostic and specialized gynecologic services for women.'/>

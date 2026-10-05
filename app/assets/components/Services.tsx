@@ -1,15 +1,3 @@
-interface ServiceProps {
-  title: string
-}
-
-const Service = ({title} : ServiceProps) => {
-  return (
-    <div className="w-full bg-white shadow rounded-md px-6 py-4">
-      <h3>{title}</h3>
-    </div>
-  )
-}
-
 interface ServicesProps {
   title: string
   services: string[]
@@ -17,12 +5,15 @@ interface ServicesProps {
 
 export const Services = ({title, services} : ServicesProps) => {
   return (
-    <div className="m-16">
+    <section className="page-x py-12 md:py-16">
       <h1>{title}</h1>
-      <br/>
-      <div className="flex flex-wrap gap-5">
-        {services.map(service => <div key={service.toString()}><Service title={service}/></div>)}
-      </div>
-    </div>
+      <ul className="mt-8 flex flex-wrap gap-3">
+        {services.map(service => (
+          <li key={service} className="rounded-full bg-white px-5 py-2.5 shadow-sm ring-1 ring-black/5">
+            {service}
+          </li>
+        ))}
+      </ul>
+    </section>
   )
 }

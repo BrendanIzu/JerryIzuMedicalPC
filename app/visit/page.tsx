@@ -25,26 +25,21 @@ export default function Visit() {
   return (
     <>
       <NavBar/>
-      <div className="m-16">
-        <div>
-          <Bar/>
-          <br/>
-          <br/>
-          <h1>Your First Visit</h1>
-          <br/>
-          <h2>
-            We look forward to providing you with our best care. 
-            Don't forgot to bring your ID and insurance, 
-            and please arrive 15 minutes before your appointment time.
-          </h2>
-        </div>
-      </div>
+      <section className="page-x py-8 md:py-12">
+        <Bar/>
+        <h1 className="mt-6">Your First Visit</h1>
+        <h2 className="mt-5 max-w-3xl">
+          We look forward to providing you with our best care. 
+          Don't forget to bring your ID and insurance, 
+          and please arrive 15 minutes before your appointment time.
+        </h2>
+      </section>
       
       <Section 
         title={"We're excited to see you!"} 
         subtitle={"We know that your first visit to a doctor can sometimes be stressful, \
           but we are confident that you'll soon feel comfortable with our \
-          experienced team of professionals health care providers. \n\n\
+          experienced team of professional health care providers. \n\n\
           You'll be in good hands, but in case you have any questions \
           or concerns before your appointment, don't hesitate to contact \
           our office and we'd be happy to provide answers. \n\n\
@@ -53,14 +48,7 @@ export default function Visit() {
         image={"/office.png"} 
         position={"section"}/>
     
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
       <Faqs faqs={questionsAndAnswers}/>
-      <br/>
-      <br/>
       <Footer/>
     </>
   );

@@ -25,22 +25,15 @@ export default function Procedures() {
   return (
     <>
       <NavBar/>
-      <div className="mx-16">
-        <div className="mt-12">
-          <Bar/>
-          <br/>
-          <h1>
-            Our Services
-          </h1>
-          <br/>
-          <h2>
-            We're here to provide a variety of services to our patients, 
-            ensuring the best and most comprehensive care. Here are the 
-            specializations of our practice and the full list of services below.
-          </h2>
-          <br/>
-        </div>
-      </div>
+      <section className="page-x py-8 md:py-12">
+        <Bar/>
+        <h1 className="mt-6">Our Services</h1>
+        <h2 className="mt-5 max-w-3xl">
+          We're here to provide a variety of services to our patients, 
+          ensuring the best and most comprehensive care. Here are the 
+          specializations of our practice and the full list of services below.
+        </h2>
+      </section>
       <Offerings/>
       <Treatments/>
       <Services title='Available Services' services={services}/>
